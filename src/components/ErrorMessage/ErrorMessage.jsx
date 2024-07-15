@@ -1,9 +1,5 @@
-import css from './ErrorMessage.module.css';
+import css from "./ErrorMessage.module.css";
 
-export default function ErrorMessage() {
-  return (
-    <div className={css.container}>
-      <div>ErrorMessage</div>
-    </div>
-  );
+export default function ErrorMessage({ message }) {
+  return <p className={css.errorMessage__text}>{message}</p>;
 }

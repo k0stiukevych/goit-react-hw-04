@@ -1,2 +1,34 @@
-.container {
+.searchBar__Form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    margin-bottom: 30px;
+}
+
+.searchBar__Input {
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #434343;
+    padding-left: 15px;
+    background-color: #2f2f2f;
+}
+
+.searchBar__Input:focus {
+    background-color: #434343;
+}
+
+.searchBar__Input::placeholder {
+    color: #6c6c6c;
+}
+
+.searchBar__button {
+    height: 40px;
+    background-color: #2f2f2f;
+    border: 2px solid #434343;
+}
+
+.searchBar__button:hover {
+    background-color: #434343;
+    border: 2px solid #434343;
 }

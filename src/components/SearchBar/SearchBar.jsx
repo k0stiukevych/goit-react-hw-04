@@ -1,9 +1,30 @@
-import css from './SearchBar.module.css';
+import { Formik, Form, Field } from "formik";
+import css from "./SearchBar.module.css";
 
-export default function SearchBar() {
+export default function SearchBar({ onSearch }) {
   return (
-    <div className={css.container}>
-      <div>SearchBar</div>
-    </div>
+    <header className={css.searchBar__header}>
+      <Formik
+        initialValues={{ query: "" }}
+        onSubmit={(values, actions) => {
+          onSearch(values.query);
+          actions.resetForm();
+        }}
+      >
+        <Form className={css.searchBar__Form}>
+          <Field
+            className={css.searchBar__Input}
+            type="text"
+            autoComplete="off"
+            autoFocus
+            placeholder="Search by word..."
+            name="query"
+          />
+          <button className={css.searchBar__button} type="submit">
+            Search
+          </button>
+        </Form>
+      </Formik>
+    </header>
   );
 }
