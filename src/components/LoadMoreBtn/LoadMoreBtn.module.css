@@ -1,2 +1,10 @@
-.container {
+.btnLoadMore {
+    height: 40px;
+    background-color: #2f2f2f;
+    border: 2px solid #434343;
+}
+
+.btnLoadMore:hover {
+    background-color: #434343;
+    border: 2px solid #434343;
 }
