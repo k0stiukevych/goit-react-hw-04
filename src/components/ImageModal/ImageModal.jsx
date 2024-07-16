@@ -15,7 +15,7 @@ export default function ImageModal({ modalData, isModalOpen, onModalClose }) {
       <img className={css.imageModal__image} src={imageFullSrc} alt={altText} />
       <div className={css.imageModal__info}>
         <p className={css.imageModal__author}>{author}</p>
-        <p className={css.imageModal__likes}>{likes} 👍</p>
+        <p className={css.imageModal__likes}>{likes} 💕</p>
       </div>
     </ReactModal>
   );

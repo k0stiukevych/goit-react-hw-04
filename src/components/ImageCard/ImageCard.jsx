@@ -19,7 +19,7 @@ export default function ImageCard({
         />
         <div className={css.imageCard__info}>
           <p className={css.imageCard__author}>{author}</p>
-          <p className={css.imageCard__likes}>{likes} 👍</p>
+          <p className={css.imageCard__likes}>{likes} 💕</p>
         </div>
       </div>
     </li>
